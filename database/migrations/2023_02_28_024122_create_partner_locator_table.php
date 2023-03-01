@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('address');
             $table->string('website');
             $table->string('phone', 100);
-            $table->string('countries_covered', 1000);
-            $table->string('states_covered', 1000); 
+            $table->json('countries_covered');
+            $table->json('states_covered');
         });
     }
 
